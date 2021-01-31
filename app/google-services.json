@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911504861195",
+    "project_id": "buslocator-c6853",
+    "storage_bucket": "buslocator-c6853.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911504861195:android:0943737b949efcb0e57f0e",
+        "android_client_info": {
+          "package_name": "tn.rnu.buslocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911504861195-i0fnr0j5vrknqoc7ma2klra2e00iihgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT1nOzEj-4UhDVcpq3B5-UGTtKPAkK7pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911504861195-i0fnr0j5vrknqoc7ma2klra2e00iihgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

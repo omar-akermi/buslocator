@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".Singup_Form"
+    >
+
+    <EditText
+        android:id="@+id/ligne"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="39dp"
+        android:hint="Ligne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entreprise" />
+
+    <EditText
+        android:id="@+id/entreprise"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="39dp"
+        android:hint="Entrer code Entreprise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numtel" />
+
+    <TextView
+        android:id="@+id/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Inscription"
+        android:textColor="#FFC7C7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/np"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="38dp"
+        android:hint="Entrer Nom et Prenom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="38dp"
+        android:hint="Entrer Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="39dp"
+        android:hint="Entrer Mot de passe"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="39dp"
+        android:hint="Entrer E-mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+    <EditText
+        android:id="@+id/numtel"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="39dp"
+        android:hint="Entrer Tel Mobile"
+        android:phoneNumber="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Créer Compte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ligne" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="79dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="230dp"
+        android:src="@drawable/recaptcha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ligne" />
+
+    <CheckBox
+        android:id="@+id/recaptcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="86dp"
+        android:onClick="recaptchaClick"
+        android:text="Im not a robot."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ligne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
